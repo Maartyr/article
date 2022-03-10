@@ -1,0 +1,16 @@
+<!-- Alteração no "<p>" sugerida pelo Derik, pois o RaisGuide não mostrou 
+como fazer para mostrar os comentários e nem corrigir o erro do mesmo. -->
+
+<ul>
+  <% comments.each do |comments| %>
+  <li>
+    <strong>Commenter:</strong>
+    <%= comments.commenter %>
+  </li>
+
+  <li>
+    <strong>Comment:</strong>
+    <%= comments.body %>
+  </li>
+  <% end %>
+</ul>
